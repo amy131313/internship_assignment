@@ -1,0 +1,28 @@
+{% extends '../layout/default.njk' %}
+{% includeData '../components/intro-card/intro-card.json' %}
+{% set bodyClass="wrapper" %}
+{% block body %}
+    {% component 'header' %}
+    <main data-module="ui/Router" >
+        <div id="main" class="main">
+            {% component 'intro-card' , cardsData %}
+            <div class="main-content">
+                <div class="main-text">
+                    <p>{{ cardsData.contentCard }}</p>
+                    <p>{{ contentCard }}</p>
+                    {% component 'quote' %}
+                    <h2>Done</h2>
+                    <p>{{ contentCard }}</p>
+                    <p>{{ contentCard }}</p>
+                    <p>{{ contentCard }}</p>
+                    <h2>This</h2>
+                    <p>{{ contentCard }}</p>
+                </div>
+            </div>
+            <footer class="page-footer">
+                {% component 'content-link' ,cardsData %}
+            </footer>
+        </div>
+    </main>
+{% endblock %}
+{#data-display-area-id="main" #}

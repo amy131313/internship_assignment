@@ -1,0 +1,26 @@
+#load-screen {
+    z-index: 1000;
+    background: rgba(255,255,255,1);
+    width: 100vw;
+    height: 100vh;
+    .logo {
+        animation: 0.1s ease-in fade-in;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 1%;
+    }
+}
+
+
+

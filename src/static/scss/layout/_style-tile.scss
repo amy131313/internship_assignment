@@ -1,0 +1,35 @@
+.style-tile {
+    position: relative;
+    overflow: scroll;
+    margin: $spacing-m;
+
+    &-title {
+        margin-top: $spacing-xs;
+
+        &:after {
+            content: "";
+            display: block;
+            margin: rem($spacing-xs) 0;
+            height: 2px;
+            width: auto;
+            background-color: $bg-light-gray;
+        }
+    }
+
+    &-title-before {
+        margin-top: $spacing-xs;
+
+        &:before {
+            content: "";
+            display: block;
+            margin: rem($spacing-xs) 0;
+            height: 2px;
+            width: auto;
+            background-color: $bg-light-gray;
+        }
+    }
+
+    body,html {
+        overflow: scroll;
+    }
+}

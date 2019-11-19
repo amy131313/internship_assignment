@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Front-End Library</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/static/css/all.css">
+  <script>
+    (function (d, w) {
+      if (!('devicePixelRatio' in w)) return;
+
+      d.documentElement.className += ' has-js';
+
+      function loadInOrder(src) {
+        var s = d.createElement('script');
+        var deps = [].slice.call(arguments).slice(1);
+        s.src = src;
+        s.onload = function () { deps.length && loadInOrder.apply(null, deps); };
+        s.onerror = console.error;
+        d.head.appendChild(s);
+      }
+
+      var supported =
+        'Symbol' in w &&
+        'Promise' in w &&
+        'assign' in Object &&
+        'from' in Array &&
+        Symbol.iterator in NodeList.prototype &&
+        Symbol.iterator in HTMLCollection.prototype;
+
+      if (supported) {
+        loadInOrder('/static/js/main.js');
+      } else {
+        loadInOrder('/static/js/polyfill.js', '/static/js/main.js');
+      }
+
+    }(document, window));
+  </script>
+</head>
+
+<body class=style-tile data-module="Toggle/toggle">
+<main>
+    <h1 style="float: right">Style Tile</h1>
+    <section>
+        <button class="menu-toggle" data-module="menu-button/menu-button" data-opened="false"></button>
+
+
+
+        <h2 class="style-tile-title-before">NavButton</h2>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Colors</h2>
+        <div class="color-overview">
+    
+        <div class="color-item"  style="background-color:#272c37">
+        <p class="color-item-info">Background</br>#272c37</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#252733">
+        <p class="color-item-info">Nav</br>#252733</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#3c3946">
+        <p class="color-item-info">Open</br>#3c3946</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#3d3a47">
+        <p class="color-item-info">Title</br>#3d3a47</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#7d7c87">
+        <p class="color-item-info">Subtitle</br>#7d7c87</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#e3e2e6">
+        <p class="color-item-info">Light grey</br>#e3e2e6</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#292e6a">
+        <p class="color-item-info">Menu-button</br>#292e6a</p>
+</div>
+
+    
+        <div class="color-item"  style="background-color:#f14127">
+        <p class="color-item-info">Button red</br>#f14127</p>
+</div>
+
+    
+</div>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Typography</h2>
+        <div class="typography-overview">
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">H1</h2>
+    <section class="typography-item-element">
+            
+    <h1>Sailing the  white sky</h1>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">H2</h2>
+    <section class="typography-item-element">
+            
+    <h2>Sailing the  white sky</h2>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">H3</h2>
+    <section class="typography-item-element">
+            
+    <h3>Sailing the  white sky</h3>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">Paragraph XS</h2>
+    <section class="typography-item-element">
+            
+    <p class="text-xs">The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself. As in most games, players need a way to visualize the universe they’re in, and a lot of in-game options were explored.</p>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">Paragraph SM</h2>
+    <section class="typography-item-element">
+            
+    <p class="text-sm">The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself. As in most games, players need a way to visualize the universe they’re in, and a lot of in-game options were explored.</p>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">Paragraph L</h2>
+    <section class="typography-item-element">
+            
+    <p class="text-l">The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself. As in most games, players need a way to visualize the universe they’re in, and a lot of in-game options were explored.</p>
+
+
+    </section>
+</section>
+
+    
+        <section class="typography-item">
+  <h2 class="typography-item-title">Paragraph XL</h2>
+    <section class="typography-item-element">
+            
+    <p class="text-xl">The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself. As in most games, players need a way to visualize the universe they’re in, and a lot of in-game options were explored.</p>
+
+
+    </section>
+</section>
+
+    
+</div>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Quote</h2>
+        <div class="quote">
+    <blockquote class="quote-content">
+        <p class="quote-content-text"> Our internal and unofficial goal was to create an in-browser experience which could go toe-to-toe with (and even beyond) what other space sims have done in-game</p>
+        <footer class="quote-content-author">
+            <h3 class="h3">Jennifer de Wit</h3>
+            <h3 class="h3">Senior Vice President</h3>
+        </footer>
+    </blockquote>
+</div>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Buttons</h2>
+        <div class="buttons">
+    
+        
+
+    <a href="#" id="button" class="button">Read full story</a>
+
+
+    
+        
+
+    <a href="#" id="button button-s" class="button button-s">Read more</a>
+
+
+    
+        
+
+    <a href="#" id="button button-link" class="button button-link">America forever</a>
+
+
+    
+</div>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Next Link</h2>
+        <div class="content-link" data-module="content-link/content-link">
+    <a href="anotherContent.html"><strong>Next:</strong><span>Setting up your phone</span></a>
+</div>
+
+
+    </section>
+</main>
+    
+</body>
+
+</html>

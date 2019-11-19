@@ -1,0 +1,22 @@
+{% extends '../layout/default.njk' %}
+{% set bodyClass="wrapper" %}
+{% block body %}
+    {% component 'header' %}
+
+    <main class="main" data-module="ui/MouseMove">
+        <div class="error">
+            <div class="container">
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="info-error">
+                    <h1>Page Not Found</h1>
+                    <p>Sorry, but the page you were trying to view does not exist.</p>
+                    <code>
+                        {{ message }}
+                        {{ error | dump }}
+                    </code>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

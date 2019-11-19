@@ -1,0 +1,9 @@
+{% set classes = {
+    'button': true,
+    'button-link': type === 'link',
+    'button-s': size === 's' } | classes %}
+{% if href %}
+    <a href="{{ href }}" id="{{ classes }}" class="{{ classes }}">{{ text | safe }}</a>
+{% else %}
+    <button class="{{ classes }}" {% if buttonType %}type="{{ buttonType }}"{% endif %} >{{ text | safe }}</button>
+{% endif %}

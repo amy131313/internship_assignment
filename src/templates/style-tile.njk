@@ -1,0 +1,34 @@
+{% extends '../layout/default.njk' %}
+
+{% set bodyClass='style-tile' %}
+{% block body %}
+<main>
+    <h1 style="float: right">Style Tile</h1>
+    <section>
+        {% component 'menu-button' %}
+        <h2 class="style-tile-title-before">NavButton</h2>
+
+    </section>
+    <section>
+        <h2 class="style-tile-title">Colors</h2>
+        {% component 'color-overview' %}
+    </section>
+    <section>
+        <h2 class="style-tile-title">Typography</h2>
+        {% component 'typography-overview' %}
+    </section>
+    <section>
+        <h2 class="style-tile-title">Quote</h2>
+        {% component 'quote' %}
+    </section>
+    <section>
+        <h2 class="style-tile-title">Buttons</h2>
+        {% component 'buttons' %}
+    </section>
+    <section>
+        <h2 class="style-tile-title">Next Link</h2>
+        {% component 'content-link' %}
+    </section>
+</main>
+    
+{% endblock %}

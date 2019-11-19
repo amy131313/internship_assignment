@@ -1,0 +1,82 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    overflow: auto;
+    background-color: $bg-light-gray;
+
+    &-content {
+        animation: .8s ease-in appear;
+        box-shadow: $small-element-shadow;
+        @include rem(padding, 80px 40px 20px 40px);
+        background-color: white;
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: -20px;
+
+        &:hover {
+            box-shadow: $large-shadow-darker;
+        }
+    }
+
+    &-text {
+        //animation: 1s ease-in 2s appear;
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 1px;
+        }
+        p {
+            @include text-xs;
+            margin-bottom: rem(30px);
+        }
+    }
+
+    .page-footer {
+        float: right;
+        .content-link {
+            @include rem(margin, 10px 20px);
+        }
+    }
+}
+
+@media (min-width: $breakpoint-m) {
+    .main {
+        display: flex;
+
+        &-content {
+            @include rem(padding, 90px 40px 20px 40px);
+            width: 80vw;
+            box-shadow: $small-element-shadow;
+            margin-top: 0;
+            overflow-y: auto;
+            &:hover {
+                box-shadow: $large-shadow-darker;
+            }
+        }
+        &-text {
+            animation: 1.2s ease-in-out slideInFromBottom;
+            p {
+                @include text-sm;
+            }
+        }
+    }
+
+    .page-footer {
+        width: 10vw;
+        display: flex;
+        .content-link {
+            align-self: flex-end;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-l) {
+    .main-content {
+        @include rem(padding, 144px 70px 20px 70px);
+    }
+
+}
+
+

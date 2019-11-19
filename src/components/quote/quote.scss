@@ -1,0 +1,45 @@
+.quote {
+    display: flex;
+    overflow: hidden;
+
+    &:before {
+        content: '\201c';
+        color: $button-menu;
+        font-size: rem(100px);
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    .quote-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: rem(40px);
+        border-top: 1px solid lightgrey;
+
+        &-text {
+            @include text-sm;
+        }
+
+        &-author {
+            margin-top: auto;
+        }
+
+        .h3 {
+            font-size: rem(14px);
+            margin-bottom: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        &:before {
+            font-size: rem(140px);
+        }
+
+        .quote-content {
+            padding-top: 0;
+            padding-left: rem(40px);
+            border-top: none;
+            border-left: 1px solid lightgrey;
+        }
+    }
+}

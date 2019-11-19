@@ -1,0 +1,51 @@
+.intro-card {
+    //just try for mobile view
+    background-attachment: fixed;
+    background-position: center;
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 50vh;
+    transition: .6s $easy-intro-card;
+
+
+    .content {
+        position: relative;
+        padding-top: rem(100px);
+        margin: 0 auto;
+        width: 85vw;
+
+        &-title {
+            @include font-bold;
+            color: white;
+        }
+
+        &-text {
+            @include text-xs;
+            color: white;
+        }
+    }
+    @media (min-width: $breakpoint-m) {
+        background-attachment: inherit;
+        background-position-x: 0%;
+
+        height: 100vh;
+        width: 40vw;
+
+        .content {
+            @include rem(padding, 144px 0);
+            width: 80%;
+        }
+    }
+
+    @media (min-width: $breakpoint-l) {
+        width: 35vw;
+
+        .content {
+            @include rem(padding, 164px 0);
+            width: 80%;
+        }
+    }
+}

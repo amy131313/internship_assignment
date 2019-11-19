@@ -1,0 +1,18 @@
+{
+  "buttons": [
+    {
+      "href":"#",
+      "text": "Read full story"
+    },
+    {
+      "href": "#",
+      "text": "Read more",
+      "size": "s"
+    },
+    {
+      "href": "#",
+      "text": "America forever",
+      "type": "link"
+    }
+  ]
+}

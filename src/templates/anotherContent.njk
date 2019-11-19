@@ -1,0 +1,20 @@
+{% extends '../layout/default.njk' %}
+{% includeData '../components/intro-card/intro-cards.json' %}
+{% set bodyClass="wrapper" %}
+{% block body %}
+    {% component 'header' %}
+    <main>
+        <div id="main" class="main">
+            {% component 'intro-card', 'intro-cards.json'  %}
+        <div class="main-content">
+            <div class="main-text">
+                <p>{{ contentCard }}</p>
+            </div>
+        </div>
+        <footer class="page-footer">
+            {% component 'content-link', { "href": "content.html"} %}
+        </footer>
+        </div>
+    </main>
+{% endblock %}
+

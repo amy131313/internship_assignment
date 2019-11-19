@@ -1,0 +1,50 @@
+.menu-toggle {
+    border: none;
+    outline: none;
+    background: $button-menu;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    @include rem(padding, 17px 15px);
+    //test animaiton
+    //animation: 0.6s ease-in-out appear forwards;
+    &:before,
+    &:after {
+        background-color: white;
+        content: "";
+        display: flex;
+        height: 3px;
+        position: absolute;
+        width: 18px;
+    }
+
+    &:before {
+        top: 18px;
+        transition: all 0.6s $ease-out;
+
+    }
+
+    &:after {
+        box-shadow: 0 7px white;
+        top: 25px;
+        transition: all 0.6s $ease-out;
+
+    }
+
+    &[data-opened="true"] {
+        background-color: $button-menu-open;
+
+        &:before {
+            top: 25px;
+            transform: rotate(225deg);
+            width: 17px;
+        }
+
+        &:after {
+            box-shadow: none;
+            transform: rotate(315deg);
+            width: 17px;
+        }
+    }
+}
+

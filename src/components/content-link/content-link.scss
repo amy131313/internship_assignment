@@ -1,0 +1,47 @@
+.content-link {
+    display: flex;
+    //test animation
+    animation: 0.6s ease-in-out slideInFromRight;
+
+    &:before {
+        content: '\279C';
+        font-size: rem(18px);
+        color: $button-red;
+        cursor: pointer;
+    }
+
+    a {
+        border-left: 1px solid lightgrey;
+        margin-left: $spacing-xxs;
+        padding-left: $spacing-xxs;
+        text-decoration: none;
+        font-size: rem(14px);
+        color: black;
+    }
+
+    span {
+        &:before {
+            content: '\A';
+            white-space: pre;
+        }
+        @include font-light;
+        margin-top: auto;
+        color: gray;
+    }
+
+    @media (max-width: $breakpoint-link) {
+        display: block;
+
+        &:before {
+            border-bottom: 1px solid lightgrey;
+        }
+
+        a {
+            border: none;
+            &:before {
+                content: '\A';
+                white-space: pre;
+            }
+        }
+    }
+}

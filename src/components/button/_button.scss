@@ -1,0 +1,36 @@
+.button {
+    @include font-bold;
+    @include rem(padding, 10px 10px);
+    position: relative;
+    display: inline-block;
+    min-width: rem(200px);
+    max-height: 40px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: $small-element-shadow;
+    background-color: $button-red;
+    font-size: rem(18px);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+    &-s {
+        @include font-regular;
+        @include rem(padding, 5px 21px 7px);
+        min-width: auto;
+        font-size: rem(14px);
+    }
+
+    &-link {
+        @include font-light;
+        color: $button-red;
+        text-decoration: underline;
+        background-color: transparent;
+        text-transform: none;
+        box-shadow: none;
+        min-width: 0;
+    }
+}

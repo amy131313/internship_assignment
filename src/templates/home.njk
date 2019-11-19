@@ -1,0 +1,10 @@
+{% extends '../layout/default.njk' %}
+{% set bodyClass="wrapper" %}
+{% block body %}
+{% component 'header' %}
+    <main data-module="ui/Router" >
+        <div id ="main"  class="main"  >
+        {% component 'cards', cardsData %}
+        </div>
+    </main>
+{% endblock %}

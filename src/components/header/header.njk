@@ -1,0 +1,10 @@
+<header class="page-header" data-module="ui/Router">
+    {% component 'menu-button' %}
+    <nav class="page-header-links hidden">
+        <ul>
+            {% for item in items %}
+                <li><a class="link" href="{{ item.href }}">{{ item.text }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

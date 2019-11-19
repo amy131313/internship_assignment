@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "href": "/category/general",
+      "text": "General"
+    },
+    {
+      "href": "/category/business",
+      "text": "Business"
+    },
+    {
+      "href": "/category/entertainment",
+      "text": "Entertainment"
+    },
+    {
+      "href": "/category/sport",
+      "text": "Sport"
+    },
+    {
+      "href": "/category/health",
+      "text": "Health"
+    },
+    {
+      "href": "/category/technology",
+      "text": "Technology"
+    }
+  ]
+}

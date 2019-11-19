@@ -1,0 +1,36 @@
+{
+  "colors": [
+    {
+      "color": "#272c37",
+      "label": "Background"
+    },
+    {
+      "color": "#252733",
+      "label": "Nav"
+    },
+    {
+      "color": "#3c3946",
+      "label": "Open"
+    },
+    {
+      "color": "#3d3a47",
+      "label": "Title"
+    },
+    {
+      "color": "#7d7c87",
+      "label": "Subtitle"
+    },
+    {
+      "color": "#e3e2e6",
+      "label": "Light grey"
+    },
+    {
+      "color": "#292e6a",
+      "label": "Menu-button"
+    },
+    {
+      "color": "#f14127",
+      "label": "Button red"
+    }
+  ]
+}

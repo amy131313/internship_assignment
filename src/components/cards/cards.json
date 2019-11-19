@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "src": "/static/img/1.jpg",
+      "title": "Sailing the white sky",
+      "text": "The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself. As in most games, players need a way to visualize the universe they’re in, and a lot of in-game options were explored."
+    },
+    {
+      "src": "/static/img/2.jpg",
+      "title": "The next big thing is here",
+      "text" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.."
+    },
+    {
+      "src": "/static/img/3.jpg",
+      "title": "Sailing the white sky",
+      "text": "The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself.The point of using Lorem Ipsum is"
+    },
+    {
+      "src": "/static/img/4.jpg",
+      "title": "The next big thing is here",
+      "text": "The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself.The point of using Lorem Ipsum is"
+    },
+    {
+      "src": "/static/img/5.jpg",
+      "title": "Sailing the white sky,white sky",
+      "text": "The Star Citizen sub-project called “Starmap” has been in the works for almost as long as the game itself.The point of using Lorem Ipsum is"
+    }
+  ]
+}

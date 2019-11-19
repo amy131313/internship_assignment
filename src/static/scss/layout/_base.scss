@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+//Body perspective - wrapper
+.wrapper {
+    background-color: $bg-dark;
+    perspective: rem(400px);
+    perspective-origin: 50% 50%;
+    .main {
+        transition: 0.8s;
+    }
+
+    &-menu-is-open {
+        //background: linear-gradient(to right, $bg-dark, rgba(39, 44, 55, 0.86), $bg-dark);
+        background: linear-gradient(to right, #292e49, rgba(41, 46, 73, 0.86), #292e49 );
+
+        .main {
+            pointer-events: none;
+            transition: 0.9s;
+            //transform: translateZ(-400px) translateY(300px) rotateX(0deg) scale(1.2) //-- down no perspective
+            //transform: translateZ(-1000px) translateX(70%) rotateY(-55deg) scale(2); -right perspective
+            //transform: translateZ(-400px) translateY(300px) rotateX(70deg) -- down
+            transform: translateZ(-800px) translateX(130%) rotateY(0deg) scale(2.4); //- right no perspective
+
+        }
+
+        .page-header-links.hidden {
+            display: block;
+            @for $i from 1 through 10 {
+                li:nth-child(#{$i}n) {
+                    animation: 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) slideInFromTop;
+                    animation-delay: #{$i * 0.1}s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 710px) {
+    .wrapper-menu-is-open .main {
+        transform: rotateX(5deg) translateY(50px) scale(0.8);
+    }
+}
+@media (min-width: $breakpoint-m) {
+    .wrapper {
+        display: flex;
+    }
+}
+
